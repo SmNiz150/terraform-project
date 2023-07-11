@@ -6,7 +6,7 @@ secret_key = "rodj0LgNYK/8AT5ej/UzbN1ZJfGwKw7ljoFa2n9j"
 }
 
 resource "aws_instance" "one" {
-  ami             = "ami-03c7d01cf4dedc891"
+  ami             = "ami-0d1c47ab964ae2b87"
   instance_type   = "t2.micro"
   key_name        = "rahamnewkp01"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -25,9 +25,9 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-03c7d01cf4dedc891"
+  ami             = "ami-0d1c47ab964ae2b87"
   instance_type   = "t2.micro"
-  key_name        = "rahamnewkp01"
+  key_name        = "DevOps-Ohio"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-2b"
   user_data       = <<EOF
@@ -44,9 +44,9 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami             = "ami-03c7d01cf4dedc891"
+  ami             = "ami-0d1c47ab964ae2b87"
   instance_type   = "t2.micro"
-  key_name        = "rahamnewkp01"
+  key_name        = "DevOps-Ohio"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-2a"
   tags = {
@@ -55,9 +55,9 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami             = "ami-03c7d01cf4dedc891"
+  ami             = "ami-0d1c47ab964ae2b87"
   instance_type   = "t2.micro"
-  key_name        = "rahamnewkp01"
+  key_name        = "DevOps-Ohio"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-2b"
   tags = {
